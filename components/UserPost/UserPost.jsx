@@ -4,7 +4,7 @@ import { Text, View, Image } from 'react-native';
 import UserProfileImage from '../UserProfileImage/UserProfileImage';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faEllipsisH } from '@fortawesome/free-solid-svg-icons';
-import { faBookmark, faCommenting, faHeart } from '@fortawesome/free-regular-svg-icons';
+import { faBookmark, faHeart, faMessage } from '@fortawesome/free-regular-svg-icons';
 
 export default function UserPost(props) {
     return (
@@ -28,7 +28,7 @@ export default function UserPost(props) {
                     <Text style={style.iconText} >{props.likes}</Text>
                 </View>
                 <View style={style.iconContainer}>
-                    <FontAwesomeIcon style={style.icon} icon={faCommenting} size={16.5} />
+                    <FontAwesomeIcon style={style.icon} icon={faMessage} size={16.5} />
                     <Text style={style.iconText} >{props.comments}</Text>
                 </View>
                 <View style={style.iconContainer}>
